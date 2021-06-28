@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Icons from Fontawesome.com-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Fonts from Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Extra icons from Bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+      integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--AOS Animation library css link for animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Mechanic Service</title>
+  </head>
+  <body>
+    <section class="sec1">
+      <header>
+        <div class="logo">
+          <img src="/assets/Icon.svg" alt="" style="margin-top: 1.6rem" />
+        </div>
+        <ul class="moreinfo">
+          <li>about</li>
+          <li>services</li>
+          <li>contact</li>
+        </ul>
+      </header>
+      <div class="textarea">
+        <h1 data-aos="fade-up" data-aos-duration="900">
+          Mechanic at your service.
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+          we provide mechanic info nearby you so that you don’t need to worry.
+          Enter your location below and get mechanic info nearby you.
+        </p>
+        <a
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-delay="200"
+          href="#section2"
+          class="searchl-cta"
+          >Click to Search</a
+        >
+      </div>
+    </section>
+    <section class="section2" id="section2">
+      <div class="infoheader">
+        <div class="infoheader-info"></div>
+
+        <!--Search input bar-->
+        <form action="" style="margin: 0">
+          <input
+            type="text"
+            name=""
+            id="input"
+            placeholder="Enter your location"
+          />
+          <button type="submit" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="infoboxes-container">
+        <div class="infoboxes" id="infoboxes">
+          <!--<div class="infobox">
+          <h1 id="name"></h1>
+          <p id="address"></p>
+          <p id="location"></p>
+          <p id="mobile"></p>
+        </div>-->
+        </div>
+      </div>
+      <div class="infoboxes1" id="infoboxes1"></div>
+    </section>
+
+    <!--Footer section-->
+    <footer>
+      <div class="footer-map">
+        <img style="height: 4rem" src="/assets/Icon.svg" alt="" />
+      </div>
+      <p><i class="far fa-copyright"></i> 2021 Mechanic</p>
+      <p style="font-size: 0.7rem">Designed and Developed By ECE</p>
+    </footer>
+
+    <!--AOS library script tag-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
